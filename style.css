@@ -1,0 +1,87 @@
+/* General styles for the entire page */
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+/*Styling for the buttons*/
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*Hover state for buttons*/
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+/*Active state for buttons(when clicked)*/
+button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+/*Grid layout for calculator buttons*/
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 25px;
+    justify-content: center;
+}
+
+/*Styling for calculator container*/
+#calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 10px;
+    margin:0 auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.237);
+}
+
+/*Styling for the display*/
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 2rem;
+    border: none;
+    background-color: hsla(0, 0%, 38%, 0.477);
+    text-align: left;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/*Styling for the operator buttons*/
+.operator-btn{
+    background-color: hsl(37, 100%, 59%);
+}
+
+/*Styling for the operator buttons in hover state*/
+.operator-btn:hover{
+    background-color: hsl(37, 94%, 65%);
+}
+
+/*Styling for the operator buttons in active state*/
+.operator-btn:active{
+    background-color: hsl(37, 100%, 73%);
+}
+
+/*Seperate styling for equals sign*/
+#equals{
+    background-color: hsl(0, 0%, 21%);
+}
+
